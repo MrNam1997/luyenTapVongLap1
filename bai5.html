@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function fibonaci(){
+        let outFibonaci = Number(prompt("Enter the number fibonaci:"));
+        let number1 = 0;
+        let number2 = 1;
+        let temp;
+        let sum = 0;
+        for (let i = 0; i < outFibonaci; i++) {
+            temp = number1;
+            number1 = number1 + number2;
+            number2 = temp;
+            sum += number2 ;
+        }
+        return sum;
+    }
+    document.write("sum = " + fibonaci());
+</script>
+
+</body>
+</html>

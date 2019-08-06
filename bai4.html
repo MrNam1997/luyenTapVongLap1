@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function fibonaci() {
+            let outFibonaci = Number(prompt("Enter the number fibonaci:"));
+            let result = [];
+            let number1 = 0;
+            let number2 = 1;
+            let temp;
+            for (let i = 1; i < outFibonaci; i++) {
+                temp = number1 + number2;
+                number1 = number2;
+                number2 = temp;
+                result.push(temp);
+            }
+            return result;
+        }
+
+    function outputFibo() {
+        let arr = fibonaci();
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 5 == 0) {
+                return(arr[i]);
+            }
+        }
+        return arr[i];
+    }
+    document.write("so dau tien chia het cho 5 trong fibonaci la  " + outputFibo());
+</script>
+
+</body>
+</html>
